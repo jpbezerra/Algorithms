@@ -109,4 +109,6 @@ int main() {
     int result = graph.prim();
 
     cout << result << '\n';
+
+    return 0;
 }
