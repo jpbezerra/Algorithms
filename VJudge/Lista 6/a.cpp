@@ -94,8 +94,6 @@ public:
     }
 };
 
-
-
 int main() {
     int cases, numNode, edges, start, dest, server1, server2, weight;
     cin >> cases;
