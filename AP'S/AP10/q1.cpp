@@ -111,26 +111,6 @@ public:
         mark.clear();
     };
 
-    int numbNodes() {
-        return numNode;
-    };
-
-    int numbEdges() {
-        return numEdge;
-    };
-
-    vector<vector<int>> myMatrix() {
-        return matrix;
-    };
-
-    vector<bool> myMark() {
-        return mark;
-    };
-
-    int weight(int node1, int node2) {
-        return matrix[node1][node2];
-    };
-
     void setEdge(int node1, int node2, int weight) {
         if (weight == 0) {
             cerr << "weight is zero" << '\n';
@@ -143,15 +123,6 @@ public:
         
         matrix[node1][node2] = weight;
         matrix[node2][node1] = weight;
-    };
-
-    void delEdge(int node1, int node2) {
-        if (isEdge(node1, node2)) {
-            numEdge--;
-        }
-        
-        matrix[node1][node2] = 0;
-        matrix[node1][node2] = 0;
     };
 
     void graphTraverse(string operation) {
