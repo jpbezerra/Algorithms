@@ -132,7 +132,7 @@ public:
 
 int main() {
     int cases;
-    scanf("%d", &cases);
+    cin >> cases;
 
     // quantos casos vão existir
 
@@ -141,7 +141,7 @@ int main() {
 
     for (int i = 0; i < cases; i++) {
         
-        scanf("%d", &operations);
+        cin >> operations;
         // quantas operações em cada caso
 
         string phrase;
