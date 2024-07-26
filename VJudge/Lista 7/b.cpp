@@ -74,7 +74,7 @@ public:
             cout << "IMPOSSIBLE";
         }
 
-        else if (treasure || numSpikes >= spikes) {
+        else if (treasure && numSpikes >= spikes) {
             cout << "SUCCESS";
         }
     }
