@@ -23,7 +23,7 @@ void coinRow(int coins, vector<int>& coin) {
 
     for (int i = results.size() - 1; i >= 0; i--) {
         if (i == 0) {
-            cout << coin[results[i]] << '=' << result[coins];
+            cout << coin[results[i]] << '=' << result[coins] << '\n';
             break;
         }
 
@@ -41,15 +41,21 @@ int main() {
         cout << "Caso " << i + 1 << ": ";
 
         cin >> coins;
-        vector<int> coin(coins + 1);
-        coin[0] = 0;
 
-        for (int j = 1; j <= coins; j++) {
-            cin >> coin[j];
+        if (coins == 0) {
+            cout << "0=0" << '\n';
         }
 
-        coinRow(coins, coin);
-        cout << '\n';
+        else {
+            vector<int> coin(coins + 1);
+            coin[0] = 0;
+
+            for (int j = 1; j <= coins; j++) {
+                cin >> coin[j];
+            }
+
+            coinRow(coins, coin);
+        }
     }
 
     return 0;
