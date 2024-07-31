@@ -160,6 +160,8 @@ int main() {
                 prev(l);
             }
         }
+
+        free(l);
     }
 
     return 0;
