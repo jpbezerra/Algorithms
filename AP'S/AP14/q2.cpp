@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int knapsack(vector<vector<int>>& result, vector<int>& weights, vector<int>& values, int i, int j) {
+void knapsack(vector<vector<int>>& result, vector<int>& weights, vector<int>& values, int i, int j) {
     if (result[i][j] < 0) {
         int value;
         if (j < weights[i]) {
@@ -15,8 +15,6 @@ int knapsack(vector<vector<int>>& result, vector<int>& weights, vector<int>& val
 
         result[i][j] = value;
     }
-
-    return result[i][j];
 }
 
 int main() {
